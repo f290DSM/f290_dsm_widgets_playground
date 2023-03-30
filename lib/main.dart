@@ -1,5 +1,5 @@
-import 'package:f290_dsm_widgets_playground/pages/contador_statefull.dart';
-import 'package:f290_dsm_widgets_playground/pages/contador_stateless.dart';
+import 'pages/contador_statefull.dart';
+import 'pages/contador_stateless.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ContadorStatefull(title: 'Flutter Demo Home Page'),
+      home: const ContadorStatefull(title: 'Stateful Home Page'),
     );
   }
 }

@@ -25,20 +25,14 @@ class _ContadorStatefullState extends State<ContadorStatefull> {
       appBar: AppBar(title: Text(widget.title)),
       body: Center(
         child: Column(
+          mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               '$_counter',
+              style: const TextStyle(fontSize: 48, fontWeight: FontWeight.w600),
             ),
             Text('Voce incrementou $_counter vezes o contador.'),
-            const BmiCard(
-              icon: Icons.favorite,
-              descricao: 'Favoritar',
-            ),
-            const BmiCard(
-              icon: Icons.adb,
-              descricao: 'Android',
-            ),
           ],
         ),
       ),
