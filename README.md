@@ -250,5 +250,23 @@ Mas antes, altere o widget do `MyApp` para o `ContadorStatefull`, altere também
 
 <img src="lib/assets/images/stateful.png" height="500">
 
+> Observe o log em console do App
 
-> O próximo commit incluirei o custom widget que criamos no final da aula.
+```
+An Observatory debugger and profiler on iPhone 13 is available at: http://127.0.0.1:52022/eHHy8rgy6Ug=/
+flutter: Execução do build!
+The Flutter DevTools debugger and profiler on iPhone 13 is available at:
+http://127.0.0.1:9101?uri=http://127.0.0.1:52022/eHHy8rgy6Ug=/
+flutter: Valor atual do contador 1
+flutter: Execução do build!
+flutter: Valor atual do contador 2
+flutter: Execução do build!
+flutter: Valor atual do contador 3
+flutter: Execução do build!
+flutter: Valor atual do contador 4
+flutter: Execução do build!
+```
+
+> Observer que a cada vez que acionamos o FAB, um novo build é executado. 
+
+### O próximo commit incluirei o custom widget que criamos no final da aula.

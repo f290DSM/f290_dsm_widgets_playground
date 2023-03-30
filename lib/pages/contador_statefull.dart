@@ -16,11 +16,13 @@ class _ContadorStatefullState extends State<ContadorStatefull> {
   _increment() {
     setState(() {
       _counter++;
+      print('Valor atual do contador $_counter');
     });
   }
 
   @override
   Widget build(BuildContext context) {
+    print('Execução do build!');
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: Center(
