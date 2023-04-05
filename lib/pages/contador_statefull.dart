@@ -1,4 +1,4 @@
-import 'package:f290_dsm_widgets_playground/pages/bmi_card_widget.dart';
+import 'package:f290_dsm_widgets_playground/share/bmi_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class ContadorStatefull extends StatefulWidget {
