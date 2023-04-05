@@ -242,7 +242,7 @@ class _ContadorStatefullState extends State<ContadorStatefull> {
 }
 ```
 
-> Finalizamos a versão Stateless
+> Finalizamos a versão Stateful
 
 ## Teste o App
 
