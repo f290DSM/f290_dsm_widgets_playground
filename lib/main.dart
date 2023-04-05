@@ -2,6 +2,8 @@ import 'package:f290_dsm_widgets_playground/pages/bmi.dart';
 
 import 'pages/contador_statefull.dart';
 import 'pages/contador_stateless.dart';
+import 'pages/bottom_navigation_page.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         // ),
       ),
       // home: const ContadorStatefull(title: 'Stateful Home Page'),
-      home: const BmiCalculatorPage(),
+      home: const BottomNavigationPage(),
     );
   }
 }
