@@ -1,3 +1,4 @@
+import 'package:f290_dsm_widgets_playground/pages/butons_input_page.dart';
 import 'package:flutter/material.dart';
 
 import 'TextInput.dart';
@@ -11,8 +12,8 @@ class BottomNavigationPage extends StatefulWidget {
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   var pages = [
-    TextInputPage(),
-    Container(color: Colors.deepPurple),
+    const TextInputPage(),
+    const ButtonsInputPage(),
     Container(color: Colors.deepOrange),
   ];
 
