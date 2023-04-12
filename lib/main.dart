@@ -21,13 +21,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
         colorSchemeSeed: Colors.yellow,
-        // brightness: Brightness.dark
-        // colorScheme: ColorScheme.fromSeed(
-        //   brightness: Brightness.light,
-        //   seedColor: Colors.pink,
-        // ),
       ),
-      // home: const ContadorStatefull(title: 'Stateful Home Page'),
       home: const BottomNavigationPage(),
     );
   }

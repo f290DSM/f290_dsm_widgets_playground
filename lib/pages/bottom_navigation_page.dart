@@ -1,7 +1,4 @@
-import 'package:f290_dsm_widgets_playground/pages/butons_input_page.dart';
 import 'package:flutter/material.dart';
-
-import 'TextInput.dart';
 
 class BottomNavigationPage extends StatefulWidget {
   const BottomNavigationPage({super.key});
@@ -12,9 +9,9 @@ class BottomNavigationPage extends StatefulWidget {
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   var pages = [
-    const TextInputPage(),
-    const ButtonsInputPage(),
     Container(color: Colors.deepOrange),
+    Container(color: Colors.deepPurple),
+    Container(color: Colors.pink),
   ];
 
   int _selectedIndex = 0;
@@ -22,7 +19,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Text Inputs')),
+      appBar: AppBar(title: const Text('Currency Wall')),
       body: IndexedStack(
         index: _selectedIndex,
         children: pages,
