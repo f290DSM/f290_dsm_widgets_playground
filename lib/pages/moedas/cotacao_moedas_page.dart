@@ -33,12 +33,24 @@ class CotacaoMoedasPage extends StatelessWidget {
             ),
           );
         }
-//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
         if (snapshot.hasError) {
-          return const Center(
-            child: Icon(
-              FontAwesomeIcons.faceFrown,
-              size: 150,
+          return Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(
+                  FontAwesomeIcons.faceFrown,
+                  size: 150,
+                ),
+                Text(
+                  snapshot.error.toString(),
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.6),
+                    fontSize: 32,
+                  ),
+                ),
+              ],
             ),
           );
         }

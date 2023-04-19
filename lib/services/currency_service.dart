@@ -30,8 +30,8 @@ class CurrencyService {
   }
 
   Future<List<CurrencyModel>> getCurrencies() async {
-    await Future.delayed(const Duration(seconds: 5));
-
+    //TODO: Para testar a exceção no App, descomente a linha abaixo
+    //throw Exception('Erro de conexao, foi mal!');
     var data = await getData();
     var json = jsonDecode(data);
     var jsonCurrencies = json['results']['currencies'];
