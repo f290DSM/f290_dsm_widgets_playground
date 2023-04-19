@@ -15,7 +15,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   static final service = FakeCurrencyService();
 
   var pages = [
-    CotacaoMoedasPage(currencies: service.getAllCurrencies()),
+    const CotacaoMoedasPage(),
     Container(color: Colors.deepPurple),
     Container(color: Colors.pink),
   ];

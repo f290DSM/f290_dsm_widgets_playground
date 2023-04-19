@@ -30,6 +30,8 @@ class CurrencyService {
   }
 
   Future<List<CurrencyModel>> getCurrencies() async {
+    await Future.delayed(const Duration(seconds: 5));
+
     var data = await getData();
     var json = jsonDecode(data);
     var jsonCurrencies = json['results']['currencies'];
