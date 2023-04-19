@@ -18,49 +18,10 @@ class CurrencyWidget extends StatelessWidget {
           child: Text(currency.name!.substring(0, 3)),
         ),
         title: Text(currency.name!),
-        subtitle: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Buy: ${currency.buy}  -  '),
-            Text('Sell: ${currency.sell ?? 'ND'}  -  '),
-            Text('Var: ${currency.variation}'),
-          ],
+        subtitle: Text(
+          'Buy: ${currency.buy} - Sell: ${currency.sell ?? 'ND'} - Var: ${currency.variation}',
         ),
       ),
     );
   }
 }
-
-/*
-Text.rich(
-          TextSpan(
-            children: [
-              TextSpan(
-                text: 'Buy: ',
-                children: [
-                  TextSpan(
-                      text: currency.buy?.toStringAsFixed(2),
-                      style: const TextStyle(fontWeight: FontWeight.w600))
-                ],
-              ),
-              TextSpan(
-                text: ' - Sell: ',
-                children: [
-                  TextSpan(
-                      text: currency.sell?.toStringAsFixed(2),
-                      style: const TextStyle(fontWeight: FontWeight.w600))
-                ],
-              ),
-              TextSpan(
-                text: ' - Variation: ',
-                children: [
-                  TextSpan(
-                      text: currency.variation?.toStringAsFixed(2),
-                      style: const TextStyle(fontWeight: FontWeight.w600))
-                ],
-              ),
-            ],
-          ),
-        ),
-*/
